@@ -4,39 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#11120f">
-  <meta name="description" content="Интерактивная хронология первых четырёх игр Five Nights at Freddy’s и справочник терминов." />
-  <title>Ночная смена — архив FNaF</title>
+  <meta name="description" content="Подробная интерактивная хронология событий первых четырёх игр Five Nights at Freddy’s." />
+  <title>Хронология — архив Фазбера</title>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="Архив, на главную"><span class="brand-mark">F.</span><span>НЕОФИЦИАЛЬНЫЙ<br><b>АРХИВ ФАЗБЕРА</b></span></a>
-    <nav aria-label="Основная навигация"><a class="nav-active" href="#timeline">Хронология</a><a href="#glossary">Справочник</a></nav>
+    <a class="brand" href="index.html" aria-label="Архив, на главную"><span class="brand-mark">F.</span><span>НЕОФИЦИАЛЬНЫЙ<br><b>АРХИВ ФАЗБЕРА</b></span></a>
+    <nav aria-label="Основная навигация"><a class="nav-active" href="index.html">Хронология</a><a href="glossary.html">Справочник <span class="nav-arrow">↗</span></a></nav>
     <span class="top-note"><i></i> ДОСЬЕ 001 — 004</span>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> АРХИВ · ИГРЫ 01—04</p>
-        <h1>Каждая ночь<br>что-то <em>скрывает.</em></h1>
-        <p class="hero-intro">История Freddy Fazbear’s Pizza не начинается с первой игры. Собери её по кусочкам: от семейной закусочной до заброшенного аттракциона.</p>
-        <a class="jump-link" href="#timeline">Листать хронологию <span>↓</span></a>
-      </div>
-      <div class="hero-art" aria-label="Стилизованная вывеска пиццерии Freddy Fazbear’s Pizza" role="img">
-        <div class="art-backdrop"></div><div class="art-moon"></div><div class="art-sign"><span>FREDDY FAZBEAR’S</span><b>PIZZA</b><small>OPEN LATE · EST. 1983</small></div>
-        <div class="art-arch"><div class="art-eye eye-one"></div><div class="art-eye eye-two"></div><div class="art-grille"></div></div>
-        <div class="art-caption">FIG. 01 <span>— THE FAMILY RESTAURANT</span></div>
-      </div>
-      <div class="hero-stamp"><span>НАЙДЕНО<br>В АРХИВЕ</span><b>04</b></div>
-    </section>
-
     <section class="timeline-section" id="timeline">
       <div class="section-heading">
-        <div><p class="eyebrow"><span class="eyebrow-line"></span> ЛЕНТА СОБЫТИЙ</p><h2>Хронология <span>не по порядку.</span></h2></div>
-        <p class="section-aside">События игр расположены по времени<br>внутри истории, а не по дате выхода.</p>
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> ДЕЛО № 001—004 · СПОЙЛЕРЫ</p><h2>Лента <em>событий.</em></h2></div>
+        <p class="section-aside">Одно событие — одна карточка.<br>Прокручивай ленту слева направо.</p>
       </div>
       <div class="timeline-toolbar">
         <div class="filters" role="group" aria-label="Фильтр по игре">
@@ -49,20 +34,14 @@
         </div>
         <label class="book-toggle"><input type="checkbox" id="book-toggle"><span class="toggle-ui"></span><span>Книжные источники</span><span class="book-tag">B</span></label>
       </div>
-      <div class="timeline-status"><span class="status-dot"></span><span id="event-count" aria-live="polite"></span><span class="status-separator">·</span><span>Перетащи ленту или прокрути в сторону</span><span class="scroll-cue">→</span></div>
-      <div class="timeline-viewport" tabindex="0" aria-label="Горизонтальная лента событий. Используйте Shift и колесо или клавиши со стрелками.">
+      <div class="timeline-status"><span class="status-dot"></span><span id="event-count" aria-live="polite"></span><span class="status-separator">·</span><span>Прокрути колесом или сделай свайп</span><span class="scroll-cue">→</span></div>
+      <div class="timeline-viewport" tabindex="0" aria-label="Хронология событий в горизонтальной последовательности. Используйте Shift и колесо или свайп.">
         <div class="timeline-track" id="timeline-track"></div>
       </div>
-      <p class="timeline-footnote"><span>!</span> Это рабочая реконструкция: даты игр и порядок некоторых событий остаются предметом споров. Наведи на метку источника или открой карточку, чтобы увидеть уровень уверенности.</p>
-    </section>
-
-    <section class="glossary-section" id="glossary">
-      <div class="glossary-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> УКАЗАТЕЛЬ</p><h2>Слова, за которыми<br>стоит <em>целая история.</em></h2></div><p class="glossary-lede">Незнакомый термин? Он встречается прямо в карточках. Нажми на подчёркнутое слово — архив откроет его досье.</p></div>
-      <div class="term-grid" id="term-grid"></div>
-      <div class="sources-note"><span class="sources-icon">⌕</span><p><b>Как читать этот архив</b><br>Канон игр отделён от деталей книжной трилогии. Формулировки «предположительно» и «считается» отмечают выводы сообщества, а не прямое подтверждение в игре.</p><span class="archive-id">INDEX / 04</span></div>
+      <p class="timeline-footnote"><span>!</span> Точные даты показаны только там, где их даёт игра. Порядок недатированных сцен — реконструкция; открой карточку, чтобы увидеть примечание и связь с источником.</p>
     </section>
   </main>
-  <footer><a class="brand" href="#top"><span class="brand-mark">F.</span><span>АРХИВ ФАЗБЕРА</span></a><span>ФАНАТСКИЙ СПРАВОЧНИК · НЕ СВЯЗАН С SCOTT CAWTHON</span><a href="#top">НАВЕРХ ↑</a></footer>
+  <footer><a class="brand" href="index.html"><span class="brand-mark">F.</span><span>АРХИВ ФАЗБЕРА</span></a><span>ФАНАТСКИЙ СПРАВОЧНИК · НЕ СВЯЗАН С SCOTT CAWTHON</span><a href="glossary.html">СПРАВОЧНИК ↗</a></footer>
 
   <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Закрыть">×</button><div class="dialog-kicker" id="dialog-kicker"></div><h2 id="dialog-title"></h2><div class="dialog-content" id="dialog-content"></div><div class="dialog-source" id="dialog-source"></div></dialog>
 </body>
